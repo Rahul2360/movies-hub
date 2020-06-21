@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="search-box row h-100 text-center">
+        <div class="col-12 my-auto">
+            <label class="search-text">Movies Hub</label>
+            <form (keyup.enter)="search($event)">
+                <input [(ngModel)]="search_value" [ngModelOptions]="{standalone: true}" class="form-control" type="text" />
+            </form>
+        </div>
+    </div>
+</div>

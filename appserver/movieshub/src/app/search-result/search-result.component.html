@@ -1,0 +1,41 @@
+<div class="container mt-4">
+    <div *ngFor="let movies of movies_list | keyvalue">
+        <!-- <div class="movie-block" (click)="movie_select(mdata)">
+                <img src="{{mdata.image_url}}" height="250px" width="100%" alt="{{mdata.name}}">
+                <div class="bottom-left">{{mdata.name}}</div>
+            </div> -->
+        <div class="mb-2" *ngIf="movies.key == 'movies' && movies.value.length">
+            <h3>Movies</h3>
+            <div class="row">
+                <div *ngFor="let mdata of movies.value" class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <div class="movie-block" (click)="movie_select(mdata)">
+                        <img src="{{mdata.image_url}}" height="250px" width="100%" alt="{{mdata.name}}">
+                        <div class="bottom-left">{{mdata.name}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2" *ngIf="movies.key == 'web_series' && movies.value.length">
+            <h3>Web Series</h3>
+            <div class="row">
+                <div *ngFor="let mdata of movies.value" class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <div class="movie-block" (click)="movie_select(mdata)">
+                        <img src="{{mdata.image_url}}" height="250px" width="100%" alt="{{mdata.name}}">
+                        <div class="bottom-left">{{mdata.name}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2" *ngIf="movies.key == 'animes' && movies.value.length">
+            <h3>Animes</h3>
+            <div class="row">
+                <div *ngFor="let mdata of movies.value" class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <div class="movie-block" (click)="movie_select(mdata)">
+                        <img src="{{mdata.image_url}}" height="250px" width="100%" alt="{{mdata.name}}">
+                        <div class="bottom-left">{{mdata.name}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
