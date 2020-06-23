@@ -42,6 +42,64 @@ export class SearchResultComponent implements OnInit {
     "type": "movie"
   },
   {
+    "name": "Little Women",
+    "description": "",
+    "language": ["english"],
+    "rating": "7.9",
+    "image_url":"assets/images/movies/Little_Women.jpeg",
+    "genre": ['Drama', 'Romance'],
+    "country": "US",
+    "directors": [{
+      "name":"Greta Gerwig"
+    }],
+    "actors": [{
+      "name": "Saoirse Ronan",
+      "character": ""
+    },
+    {
+      "name":"Timothée Chalamet",
+      "character": ""
+    },
+    {
+      "name": "Florence Pugh",
+      "character": ""
+    }],
+    "trailer_link": "",
+    "duration": "135",
+    "release": "2019",
+    "url":"",
+    "type": "movie"
+  },
+  {
+    "name": "Life of Pi",
+    "description": "",
+    "language": ["hindi"],
+    "rating": "7.9",
+    "image_url":"assets/images/movies/Life_of_Pi_2012.jpg",
+    "genre": ['Drama', 'Adventure'],
+    "country": "India",
+    "directors": [{
+      "name":" Ang Lee"
+    }],
+    "actors": [{
+      "name": "Suraj Sharma",
+      "character": ""
+    },
+    {
+      "name":"Irrfan Khan",
+      "character": ""
+    },
+    {
+      "name": "Tabu",
+      "character": ""
+    }],
+    "trailer_link": "",
+    "duration": "127",
+    "release": "2012",
+    "url":"",
+    "type": "movie"
+  },
+  {
     "name": "Joker",
     "description": "",
     "language": ["english"],
@@ -160,6 +218,46 @@ export class SearchResultComponent implements OnInit {
     "trailer_link": "",
     "duration": "",
     "release": "2017",
+    "url":"",
+    "type": "web_series"
+  },
+  {
+    "name": "Game of Thrones",
+    "description": "",
+    "language": ["english"],
+    "rating": "9.3",
+    "image_url":"assets/images/movies/game_of_thrones.jpg",
+    "genre": ['Drama'],
+    "country": "Canada",
+    "directors": [{
+      "name":"David Benioff"
+    },
+    {
+      "name":"D. B. Weiss"
+    }],
+    "actors": [{
+      "name": "Emilia Clarke",
+      "character": ""
+    },
+    {
+      "name":"Kit Harington",
+      "character": ""
+    },
+    {
+      "name": "Sophie Turner",
+      "character": ""
+    },
+     {
+      "name": "Peter Dinklage",
+      "character": ""
+    },
+    {
+      "name": "Maisie Williams",
+      "character": ""
+    }],
+    "trailer_link": "",
+    "duration": "",
+    "release": "2011",
     "url":"",
     "type": "web_series"
   }
